@@ -1,4 +1,21 @@
+header {
+    padding: 40px;
+    text-align: center;
+    
+}
 
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+
+
+.card-header {
+  position: relative;
+  margin-top: -20px;
+}
 
 .row {
  display:flex;
@@ -36,18 +53,12 @@
     rgba(232, 102, 236, 1);
 }
 
-.card-header {
-    position: relative;
-    margin-top: -20px;
-}
-
 @media screen and (max-width: 992px) {
     .card {
       width: 50%;
     }
   }
   
-  /* Cards are stacked on top of each other at 768px or smaller */
   @media screen and (max-width: 768px) {
     .card {
       width: 100%;
