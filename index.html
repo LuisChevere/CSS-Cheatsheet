@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+body {
+  color: white;
+  background-color: #181818;
+}
+p {
+  color: blueviolet;
+}
+h1 {
+  color:blueviolet
+}
+h2 {
+  color: blueviolet;
+}
+
+</style>
+</head>
+
 
 <head>
-    <title>CSS Snipper Cheatsheet</title>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
@@ -17,9 +34,9 @@
   </header>
 
   <main>
-    <div class="container">
-      <div class="card">
-        <h2>Flexbox Row</h2>
+    <div class= row>
+      <section class="card">
+        <div id="overlay"><h2>Flexbox Row</h2></div>
         <p> Use these three properties to create a Flexbox row layout.</p>
         <pre>.row {
             display: flex;
@@ -27,17 +44,18 @@
             flex-wrap: wrap;
         }
         </pre>
+        </section>
       </div>
-      <div class="card">
-        <h2>Flexbox Column</h2>
+      <section class="card">
+        <div id="overlay"><h2>Flexbox Column</h2></div> 
         <p> Use this to create a Flexbox column layout.</p>
         <pre>.column {
             display: flex;
             flex-direction: column;
         }
         </pre>
-        <div class="card">
-          <h2>CSS Grid Layout</h2>
+        <section class="card">
+          <div id="overlay"></div><h2>CSS Grid Layout</h2>
           <p> Builds a 12-column layout using CSS Grid.</p>
           <pre>.grid {
               display: grid;
@@ -46,8 +64,9 @@
             repeat (12, 1fr);
           }
         </pre>
-      <div class="card">
-        <h2>Linear Graidents</h2>
+        </section>
+      <section class="card">
+        <div id="overlay"></div><h2>Linear Graidents</h2>
           <p> This will create a background linear gradient from top to bottom.</p>
             <pre>.linear-gradient-background{
               background-image: linear-gradient(
@@ -55,8 +74,9 @@
                 rgba (232, 102, 236, 0.6) 100%);
               }
             </pre>
-        <div class="card">
-          <h2>Box Transition Glow</h2>
+            </section>
+        <section class="card">
+          <div id="overlay"></div><h2>Box Transition Glow</h2>
               <p> Use transition and box shadows to glow on hover.</p>
               <pre>.code.card .card-header {
                 border.rardius: 8px;
@@ -70,20 +90,21 @@
               rgba(232, 103, 236, 1);
               }
               </pre>
-          <div class="card">
-            <h2>Overlay Card with Title</h2>
+        </section>
+          <section class="card">
+            <div id="overlay"></div><h2>Overlay Card with Title</h2>
                 <p> Use position properties and negative margins to raise elements higher than their natural starting points.</p>
                 <pre>.card-header {
                   position: relative;
                   margin-top: -20px;
                 }
                 </pre>
-              </div>
+          </section>
             </div>
+            </main>
             <div class="footer">
               <h2>Made with ❤️️ and CSS</h2>
             </div>
-    </main>
   </body>
 </html>
       
